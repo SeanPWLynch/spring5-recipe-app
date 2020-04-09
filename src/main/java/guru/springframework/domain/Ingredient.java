@@ -23,6 +23,12 @@ public class Ingredient {
     public Ingredient() {
     }
 
+    public Ingredient(String description, BigDecimal amount, UnitOfMeasure unitOfMeasure) {
+        this.setDescription(description);
+        this.setAmount(amount);
+        this.setUom(unitOfMeasure);
+    }
+
     public Ingredient(String description, BigDecimal amount, UnitOfMeasure unitOfMeasure, Recipe recipe) {
         this.setDescription(description);
         this.setAmount(amount);
